@@ -65,9 +65,10 @@ launcher check this before starting; see the
 
 ```bash
 uv venv .venv && source .venv/bin/activate
-uv pip install -e ".[all]"     # vLLM, webapp, benchmark, dev tools
 
 cd video_ingestion_agent
+uv pip install -e ".[all]"     # vLLM, webapp, benchmark, dev tools
+
 # 1. Start the vLLM server (loads the VLM, ~1 minute)
 python scripts/serve.py -c configs/ingestion.yaml
 
